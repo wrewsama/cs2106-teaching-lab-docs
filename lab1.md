@@ -1,11 +1,12 @@
 # Lab 1
+
 ### About Me
 * Name: Andrew Lo Zhi Sheng
 * Course / Year: Y4 CS
 * Telegram: `@wrewsama` (Expect slow response after 10pm, I'm sleeping hehe)
 * email: `andrewlo@u.nus.edu` (try to use tele instead)
-
 ### How My Lab Sessions Work
+
 **Consultation Weeks**
 * This is **OPTIONAL**
 * But I will be in the lab to answer any questions (or you could just ask me on telegram)
@@ -34,12 +35,13 @@
 
 **Demo 2**
 1. Compile your program using the command you gave in Question 3.3
-2. Run valgrind - should have 0 errors
+2. Run valgrind - should have 0 errors / leaks 
 3. Run the program - should match the output in the question paper
 4. Show me your `llist.c` code
 
 **Demo 3**
-1. Compile your program (_don't forget the `-g` flag!_)
-2. Run valgrind - should have 0 errors
-3. Run the program - should match the output in the question paper
-4. Show me your `dir.c` code
+1. **Modify `testdir.c` to delete all the remaining files from the hashtable** (the given one doesn't delete them which results in a memory leak)
+2. Compile your program (_don't forget the `-g` flag!_)
+3. Run valgrind - should have 0 errors / leaks
+4. Run the program - should match the output in the question paper
+5. Show me your `dir.c` code
