@@ -17,7 +17,7 @@
 * I will display a doc like this one on screen with some info like:
     * Common mistakes from the previous lab
     * Overview and demo instructions for the current lab
-* You can immediately come up to the front and queue up to demo
+* You can immediately come up to the front and queue up to demo (with your lab partner, if you're both in the same lab group)
 * Once done with the demo and I take your attendance, you are dismissed :)
 
 ### Lab 1 Overview
