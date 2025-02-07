@@ -5,8 +5,8 @@
 * Course / Year: Y4 CS
 * Telegram: `@wrewsama` (Expect slow response after 10pm, I'm sleeping hehe)
 * email: `andrewlo@u.nus.edu` (try to use tele instead)
-### How My Lab Sessions Work
 
+### How My Lab Sessions Work
 **Consultation Weeks**
 * This is **OPTIONAL**
 * But I will be in the lab to answer any questions (or you could just ask me on telegram)
@@ -21,8 +21,23 @@
 * Once done with the demo and I take your attendance, you are dismissed :)
 
 ### Lab 1 Overview
-* Recap of C Programming
+* C Programming
+    * Function Prototypes (part 1)
+    * Function Pointers (part 1)
+    * Using `valgrind` to check your memory access (part 3 and 4)
 * Explore different segments of a process' memory address space [Lecture 2]
+    * Stack, Data (part 2)
+    * Allocating and releasing memory from the Heap using `malloc` and `free` (part 3)
+
+### FAQ From My Previous Class
+**I can't get xlog to work!**
+- For demoes, I personally don't care which environment you use. Feel free to use `stu` instead or download `gcc` and `valgrind` to compile / run / debug locally
+
+**I'm getting a memory leak in part 4.**
+- There is a bug in `testdir.c`, see step 1 in the Demo 3 instructions below
+
+**`flex_reduce` in part 1 is already implemented!**
+- yeah we leaked it by accident oops
 
 ### Demo Instructions
 **Demo 1**
