@@ -20,6 +20,31 @@
 * You can immediately come up to the front and queue up to demo (with your lab partner, if you're both in the same lab group)
 * Once done with the demo and I take your attendance, you are dismissed :)
 
+### Demo Instructions
+**Demo 1**
+1. Compile and run your program
+2. Show the results are correct:
+    1. Reduce result: 45.00
+    2. Flex Reduce with sum: 45.00
+    3. Flex Reduce with prod: 362880.00
+
+**Demo 2**
+1. Compile your program using the command you gave in Question 3.3
+2. Run valgrind - should have 0 errors / leaks 
+3. Run the program - should match the output in the question paper
+
+**Demo 3**
+1. **Modify `testdir.c` to delete all the remaining files from the hashtable** (the given one doesn't delete them which results in a memory leak)
+
+example:
+```c
+delete_file(NEW_FILE, hash, hashtable, TABLE_LEN);
+for(i=0; i<NUM_FNAMES; i++) if (i != 1) delete_file(fnames[i].filename, hash, hashtable, TABLE_LEN);
+```
+2. Compile your program (_don't forget the `-g` flag!_)
+3. Run valgrind - should have 0 errors / leaks
+4. Run the program - should match the output in the question paper
+
 ### Lab 1 Overview
 * C Programming
     * Function Prototypes (part 1)
@@ -39,24 +64,3 @@
 **`flex_reduce` in part 1 is already implemented!**
 - yeah we leaked it by accident oops
 
-### Demo Instructions
-**Demo 1**
-1. Compile and run your program
-2. Show the results are correct:
-    1. Reduce result: 45.00
-    2. Flex Reduce with sum: 45.00
-    3. Flex Reduce with prod: 362880.00
-3. Show me your `queue.c` code (just to make sure you're not just hardcoding the output)
-
-**Demo 2**
-1. Compile your program using the command you gave in Question 3.3
-2. Run valgrind - should have 0 errors / leaks 
-3. Run the program - should match the output in the question paper
-4. Show me your `llist.c` code
-
-**Demo 3**
-1. **Modify `testdir.c` to delete all the remaining files from the hashtable** (the given one doesn't delete them which results in a memory leak)
-2. Compile your program (_don't forget the `-g` flag!_)
-3. Run valgrind - should have 0 errors / leaks
-4. Run the program - should match the output in the question paper
-5. Show me your `dir.c` code
